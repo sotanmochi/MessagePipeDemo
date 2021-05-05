@@ -25,6 +25,12 @@ namespace MessagePipeDemo
             })
             .AddTo(d);
 
+            _messageEvent.OnFixedTick.Subscribe(message => 
+            {
+                UnityEngine.Debug.Log(message.Data +  "@EventSubscriber");
+            })
+            .AddTo(d);
+
             _disposable = d.Build();
         }
 
