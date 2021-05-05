@@ -1,4 +1,4 @@
-# MessagePipeDemo
+# MessagePipeDemo.Unity
 
 ## Dependencies
 - [MessagePipe Ver.1.3.0](https://github.com/Cysharp/MessagePipe/releases/tag/1.3.0)  
