@@ -30,3 +30,7 @@ namespace MessagePipeDemo
 ```
 
 <img src="./../../Docs/MessagePipeDemo.png">
+
+## License
+このプロジェクトは、サードパーティのアセットを除き、[CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.ja) (Public Domain) でライセンスされています。  
+This project is licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/deed.en) (Public Domain), except for third party assets.
