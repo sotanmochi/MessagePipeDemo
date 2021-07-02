@@ -7,6 +7,13 @@
       "dependencies": {},
       "hash": "7a6a2bfeae30fccd5be6e949259a02f53c92f066"
     },
+    "com.cysharp.messagepipe.interprocess": {
+      "version": "https://github.com/Cysharp/MessagePipe.git?path=src/MessagePipe.Unity/Assets/Plugins/MessagePipe.Interprocess#1.6.1",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "7a6a2bfeae30fccd5be6e949259a02f53c92f066"
+    },
     "com.cysharp.messagepipe.vcontainer": {
       "version": "https://github.com/Cysharp/MessagePipe.git?path=src/MessagePipe.Unity/Assets/Plugins/MessagePipe.VContainer#1.6.1",
       "depth": 0,
@@ -20,6 +27,13 @@
       "source": "git",
       "dependencies": {},
       "hash": "72e620d169841f32bc6110ad0e12ee9eae6f1aaf"
+    },
+    "com.neuecc.messagepack": {
+      "version": "https://github.com/neuecc/MessagePack-CSharp.git?path=src/MessagePack.UnityClient/Assets/Scripts/MessagePack#v2.2.85",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "8b558a513d0f5c12d2deaf076d4082f57663db97"
     },
     "com.unity.collab-proxy": {
       "version": "1.2.16",
