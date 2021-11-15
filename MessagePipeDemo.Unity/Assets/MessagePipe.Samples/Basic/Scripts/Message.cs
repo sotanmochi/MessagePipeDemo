@@ -1,4 +1,4 @@
-﻿namespace MessagePipeDemo
+﻿namespace MessagePipeSamples.Basic
 {
     public enum MessageKey : byte
     {

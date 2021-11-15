@@ -2,7 +2,7 @@ using MessagePipe;
 using VContainer;
 using VContainer.Unity;
 
-namespace MessagePipeDemo
+namespace MessagePipeSamples.Basic
 {
     public class GameLifetimeScope : LifetimeScope
     {

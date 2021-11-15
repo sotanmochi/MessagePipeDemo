@@ -2,7 +2,7 @@
 using MessagePipe;
 using VContainer;
 
-namespace MessagePipeDemo
+namespace MessagePipeSamples.Basic
 {
     public class MessageSubscriberA : VContainer.Unity.IStartable, IDisposable
     {

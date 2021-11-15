@@ -2,7 +2,7 @@
 using MessagePipe;
 using VContainer.Unity;
 
-namespace MessagePipeDemo
+namespace MessagePipeSamples.Basic
 {
     public class MessageEvent : ITickable, IFixedTickable, IDisposable
     {
