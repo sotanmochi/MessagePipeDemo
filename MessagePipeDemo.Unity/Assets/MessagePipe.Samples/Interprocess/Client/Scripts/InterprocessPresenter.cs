@@ -1,7 +1,7 @@
 ﻿using MessagePipe;
 using Cysharp.Threading.Tasks;
 
-namespace MessagePipeDemo.InterprocessDemo
+namespace MessagePipeSamples.Interprocess
 {
     public class InterprocessPresenter
     {

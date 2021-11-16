@@ -1,6 +1,6 @@
 ﻿using MessagePack;
 
-namespace MessagePipeDemo.InterprocessDemo
+namespace MessagePipeSamples.Interprocess
 {
     [MessagePackObject]
     public class Response

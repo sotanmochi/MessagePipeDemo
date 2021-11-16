@@ -2,7 +2,7 @@
 using MessagePack;
 using MessagePack.Resolvers;
 
-namespace MessagePipeDemo.InterprocessDemo
+namespace MessagePipeSamples.Interprocess
 {
     public class MessagePackInitializer
     {

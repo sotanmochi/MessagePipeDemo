@@ -2,7 +2,7 @@
 using Cysharp.Threading.Tasks;
 using MessagePipe;
 
-namespace MessagePipeDemo.InterprocessDemo
+namespace MessagePipeSamples.Interprocess
 {
     public class Server : IAsyncRequestHandler<Request, Response>
     {

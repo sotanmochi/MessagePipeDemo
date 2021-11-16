@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using TMPro;
 using MessagePipe;
 
-namespace MessagePipeDemo.InterprocessDemo
+namespace MessagePipeSamples.Interprocess
 {
     public class InterprocessView : MonoBehaviour
     {

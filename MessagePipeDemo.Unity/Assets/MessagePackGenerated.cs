@@ -51,8 +51,8 @@ namespace MessagePack.Resolvers
         {
             lookup = new global::System.Collections.Generic.Dictionary<Type, int>(2)
             {
-                { typeof(global::MessagePipeDemo.InterprocessDemo.Request), 0 },
-                { typeof(global::MessagePipeDemo.InterprocessDemo.Response), 1 },
+                { typeof(global::MessagePipeSamples.Interprocess.Request), 0 },
+                { typeof(global::MessagePipeSamples.Interprocess.Response), 1 },
             };
         }
 
@@ -66,8 +66,8 @@ namespace MessagePack.Resolvers
 
             switch (key)
             {
-                case 0: return new MessagePack.Formatters.MessagePipeDemo.InterprocessDemo.RequestFormatter();
-                case 1: return new MessagePack.Formatters.MessagePipeDemo.InterprocessDemo.ResponseFormatter();
+                case 0: return new MessagePack.Formatters.MessagePipeSamples.Interprocess.RequestFormatter();
+                case 1: return new MessagePack.Formatters.MessagePipeSamples.Interprocess.ResponseFormatter();
                 default: return null;
             }
         }
@@ -102,16 +102,16 @@ namespace MessagePack.Resolvers
 #pragma warning disable SA1403 // File may only contain a single namespace
 #pragma warning disable SA1649 // File name should match first type name
 
-namespace MessagePack.Formatters.MessagePipeDemo.InterprocessDemo
+namespace MessagePack.Formatters.MessagePipeSamples.Interprocess
 {
     using System;
     using System.Buffers;
     using MessagePack;
 
-    public sealed class RequestFormatter : global::MessagePack.Formatters.IMessagePackFormatter<global::MessagePipeDemo.InterprocessDemo.Request>
+    public sealed class RequestFormatter : global::MessagePack.Formatters.IMessagePackFormatter<global::MessagePipeSamples.Interprocess.Request>
     {
 
-        public void Serialize(ref MessagePackWriter writer, global::MessagePipeDemo.InterprocessDemo.Request value, global::MessagePack.MessagePackSerializerOptions options)
+        public void Serialize(ref MessagePackWriter writer, global::MessagePipeSamples.Interprocess.Request value, global::MessagePack.MessagePackSerializerOptions options)
         {
             if (value == null)
             {
@@ -124,7 +124,7 @@ namespace MessagePack.Formatters.MessagePipeDemo.InterprocessDemo
             formatterResolver.GetFormatterWithVerify<string>().Serialize(ref writer, value.Message, options);
         }
 
-        public global::MessagePipeDemo.InterprocessDemo.Request Deserialize(ref MessagePackReader reader, global::MessagePack.MessagePackSerializerOptions options)
+        public global::MessagePipeSamples.Interprocess.Request Deserialize(ref MessagePackReader reader, global::MessagePack.MessagePackSerializerOptions options)
         {
             if (reader.TryReadNil())
             {
@@ -149,17 +149,17 @@ namespace MessagePack.Formatters.MessagePipeDemo.InterprocessDemo
                 }
             }
 
-            var ____result = new global::MessagePipeDemo.InterprocessDemo.Request();
+            var ____result = new global::MessagePipeSamples.Interprocess.Request();
             ____result.Message = __Message__;
             reader.Depth--;
             return ____result;
         }
     }
 
-    public sealed class ResponseFormatter : global::MessagePack.Formatters.IMessagePackFormatter<global::MessagePipeDemo.InterprocessDemo.Response>
+    public sealed class ResponseFormatter : global::MessagePack.Formatters.IMessagePackFormatter<global::MessagePipeSamples.Interprocess.Response>
     {
 
-        public void Serialize(ref MessagePackWriter writer, global::MessagePipeDemo.InterprocessDemo.Response value, global::MessagePack.MessagePackSerializerOptions options)
+        public void Serialize(ref MessagePackWriter writer, global::MessagePipeSamples.Interprocess.Response value, global::MessagePack.MessagePackSerializerOptions options)
         {
             if (value == null)
             {
@@ -173,7 +173,7 @@ namespace MessagePack.Formatters.MessagePipeDemo.InterprocessDemo
             formatterResolver.GetFormatterWithVerify<string>().Serialize(ref writer, value.Message, options);
         }
 
-        public global::MessagePipeDemo.InterprocessDemo.Response Deserialize(ref MessagePackReader reader, global::MessagePack.MessagePackSerializerOptions options)
+        public global::MessagePipeSamples.Interprocess.Response Deserialize(ref MessagePackReader reader, global::MessagePack.MessagePackSerializerOptions options)
         {
             if (reader.TryReadNil())
             {
@@ -202,7 +202,7 @@ namespace MessagePack.Formatters.MessagePipeDemo.InterprocessDemo
                 }
             }
 
-            var ____result = new global::MessagePipeDemo.InterprocessDemo.Response();
+            var ____result = new global::MessagePipeSamples.Interprocess.Response();
             ____result.Code = __Code__;
             ____result.Message = __Message__;
             reader.Depth--;
